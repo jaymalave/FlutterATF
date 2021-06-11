@@ -40,7 +40,7 @@ class _LoginPage extends State<LoginPage> {
        Navigator.push(
         context,
         MaterialPageRoute(builder: (context) {
-          return HomePage(this.user);
+          return MyHome(this.user);
         },),
       )
     });
@@ -81,6 +81,6 @@ class _LoginPage extends State<LoginPage> {
   }
 }
 
-_HomePageState(FirebaseUser user) async {
+_MyHome(FirebaseUser user) async {
 
 }

@@ -7,65 +7,30 @@ import 'package:flutter/material.dart';
 
 class MyHome extends StatefulWidget {
   
-
+MyHome(FirebaseUser user);
   @override
   _MyHome createState() => _MyHome();
   
 }
 
 class _MyHome extends State<MyHome>{
-  
+  FirebaseUser user;
   @override
  Widget build(BuildContext context) {
        return Scaffold(
 
       appBar: AppBar(),
 
-      body: 
-
-      bottomNavigationBar: BottomNavigationBar(
-              items: const <BottomNavigationBarItem>[
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.home),
-                  label: 'CDJ',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.add_chart),
-                  label: 'Cart',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.account_circle_rounded),
-                  label: 'Profile',
-                ),
-              ],
-            ),
-    
-    );
- }
-}
-
-
-
-class HomePage extends StatefulWidget {
-  HomePage(FirebaseUser user);
-
-  @override
-  _HomePageState createState() => _HomePageState();
-  
-}
-
-class _HomePageState extends State<HomePage> {
-  FirebaseUser user;
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      borderOnForeground: true,
+      body: Card(
+   
+       //c code
+   
+       borderOnForeground: true,
       color: Colors.white,
       child: Column(
         children: <Widget>[
           new Padding(
-            padding: EdgeInsets.all(20),
+            padding: EdgeInsets.all(5),
           ),
           new Text(
             'Hello, $user!',
@@ -283,10 +248,34 @@ class _HomePageState extends State<HomePage> {
           
         ],
       ),
-    );
 
-  }
+      //c ends
+
+      ),
+          
+
+      bottomNavigationBar: BottomNavigationBar(
+              items: const <BottomNavigationBarItem>[
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.home),
+                  label: 'CDJ',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.add_chart),
+                  label: 'Cart',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.account_circle_rounded),
+                  label: 'Profile',
+                ),
+              ],
+      ),
+            );
+    
+  
+ }
 }
+
 
 
 
