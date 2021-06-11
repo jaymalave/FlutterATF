@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "910864402790",
+    "project_id": "atfapp-40571",
+    "storage_bucket": "atfapp-40571.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910864402790:android:183472d664813f336720a7",
+        "android_client_info": {
+          "package_name": "com.example.atf_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910864402790-kgtgejh6gl3s3iol7ehjurvupbu1knf2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.atf_app",
+            "certificate_hash": "8cdae04156def658377e024feba1135ad2856367"
+          }
+        },
+        {
+          "client_id": "910864402790-idonkfubbp3u4uc9sh06it4t3hvsk6tj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQFFWQ3WJIZI52s8ttbuBJGYupfoZ2X5w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910864402790-idonkfubbp3u4uc9sh06it4t3hvsk6tj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
