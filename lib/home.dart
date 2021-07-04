@@ -1,7 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
+  @override
+  _Home createState() => _Home();
+}
+
+class _Home extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,22 +37,23 @@ class Home extends StatelessWidget {
               height: 150,
               width: 400,
               child: GestureDetector(
-                onLongPress: ()  => showDialog<String>(
-        context: context,
-        builder: (BuildContext context) => AlertDialog(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0),),
-          title: const Text('Mango Mafia'),
-          content: const Text('Here goes the description!'),
-          actions: <Widget>[
-            TextButton(
-              onPressed: () => Navigator.pop(context, 'OK'),
-              child: const Text('OK'),
-            ),
-          ],
-        ),
-      ),
-
-            child: new Card(
+                onLongPress: () => showDialog<String>(
+                  context: context,
+                  builder: (BuildContext context) => AlertDialog(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                    title: const Text('Mango Mafia'),
+                    content: const Text('Here goes the description!'),
+                    actions: <Widget>[
+                      TextButton(
+                        onPressed: () => Navigator.pop(context, 'OK'),
+                        child: const Text('OK'),
+                      ),
+                    ],
+                  ),
+                ),
+                child: new Card(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0),
                   ),
@@ -116,20 +122,22 @@ class Home extends StatelessWidget {
               height: 162,
               width: 400,
               child: GestureDetector(
-                                onLongPress: ()  => showDialog<String>(
-        context: context,
-        builder: (BuildContext context) => AlertDialog(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0),),
-          title: const Text('Apple Afficiado'),
-          content: const Text('Here goes the description!'),
-          actions: <Widget>[
-            TextButton(
-              onPressed: () => Navigator.pop(context, 'OK'),
-              child: const Text('OK'),
-            ),
-          ],
-        ),
-      ),
+                onLongPress: () => showDialog<String>(
+                  context: context,
+                  builder: (BuildContext context) => AlertDialog(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                    title: const Text('Apple Afficiado'),
+                    content: const Text('Here goes the description!'),
+                    actions: <Widget>[
+                      TextButton(
+                        onPressed: () => Navigator.pop(context, 'OK'),
+                        child: const Text('OK'),
+                      ),
+                    ],
+                  ),
+                ),
                 child: new Card(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0),
@@ -199,20 +207,22 @@ class Home extends StatelessWidget {
               height: 162,
               width: 400,
               child: GestureDetector(
-                                onLongPress: ()  => showDialog<String>(
-        context: context,
-        builder: (BuildContext context) => AlertDialog(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0),),
-          title: const Text('Orange Outta Hills'),
-          content: const Text('Here goes the description!'),
-          actions: <Widget>[
-            TextButton(
-              onPressed: () => Navigator.pop(context, 'OK'),
-              child: const Text('OK'),
-            ),
-          ],
-        ),
-      ),
+                onLongPress: () => showDialog<String>(
+                  context: context,
+                  builder: (BuildContext context) => AlertDialog(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                    title: const Text('Orange Outta Hills'),
+                    content: const Text('Here goes the description!'),
+                    actions: <Widget>[
+                      TextButton(
+                        onPressed: () => Navigator.pop(context, 'OK'),
+                        child: const Text('OK'),
+                      ),
+                    ],
+                  ),
+                ),
                 child: new Card(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0),
@@ -283,8 +293,6 @@ class Home extends StatelessWidget {
 
         //c ends
       ),
-      
-      
     );
   }
 }
