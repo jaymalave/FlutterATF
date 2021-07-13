@@ -1,6 +1,6 @@
-import 'package:atf_app/cart.dart';
-import 'package:atf_app/home.dart';
-import 'package:atf_app/profile.dart';
+import 'package:atf_app/screens/cart.dart';
+import 'package:atf_app/screens/home.dart';
+import 'package:atf_app/screens/profile.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

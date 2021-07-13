@@ -1,4 +1,4 @@
-import 'package:atf_app/auth.dart';
+import 'package:atf_app/auth/auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_auth_buttons/flutter_auth_buttons.dart';

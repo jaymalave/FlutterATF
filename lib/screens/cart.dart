@@ -37,6 +37,7 @@ class _Cart extends State<Cart> {
                     new Padding(
                       padding: EdgeInsets.only(left: 10, right: 200),
                     ),
+                    
                     Container(
                       height: 50,
                       width: 100,
